@@ -1,0 +1,41 @@
+CSS Template for using Fonts in my Portfolio Website v2
+
+----------------------------
+IMPORTS (inside the head tag)
+----------------------------
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Fira+Code:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+----------------------------
+CSS STYLING
+----------------------------
+
+--Header/Bolder font--
+boldonse font
+----------------------------
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+--text font--
+fira-code font
+----------------------------
+.fira-code-<uniquifier> {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+--light feel text font--
+winky-sans
+----------------------------
+.winky-sans-<uniquifier> {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

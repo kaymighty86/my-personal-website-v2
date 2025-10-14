@@ -1,11 +1,23 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+:root,:root[theme="dark"]{
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  /*dark theme*/
+  --primary-accent: #755BE9;
+  --active-color: aqua;
+  --bg-color: #22222d;
+  --bg-highlight-color: #3e3e54;
+  --text: #9fa5b2;
+  --text-2: #e7ea37;
+
+  /*light theme*/
+  /*WORK IN PROGRESS*/
+
+  /*setting default styles*/
+  background-color: var(--bg-color);
+  color: var(--text);
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,9 +26,50 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  margin: 0px;
   min-width: 320px;
-  min-height: 100vh;
+}
+
+::-webkit-scrollbar{
+  background-color: var(--bg-highlight-color);
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--primary-accent);
+  border-radius: 2rem;
+  border: 0.1rem solid var(--bg-highlight-color);
+}
+
+h1,h2{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  color: var(--primary-accent);
+  margin: 0px;
+}
+
+h1{
+  font-size: x-large;
+}
+
+h2{
+  font-size: larger;
+}
+
+h3{
+  margin: 0px;
+  font-size: large;
+}
+
+p{
+  font-size: medium;
+  margin: 0.5rem 0px;
+}
+
+a{
+  cursor: pointer;
+}
+
+a[target="blank"]{
+
 }
