@@ -1,19 +1,22 @@
 .highlighter{
-    position: relative;
+    display: inline-block;
     z-index: 1;
+    position: relative;
 }
 
-.highlightSpan{
+.highlighter::before{
+    content: "";
     display: inline-block;
-    width: 0px;
+    width: 103%;
     height: 80%;
     position: absolute;
     top: 10%;
-    left: 0px;
+    left: -1%;
     /* transform: translateY(-50%); */
     background-color: var(--active-color);
     z-index: -1;
-    animation: highlight_b 0.4s;
+    animation: highlight_b 0.4s ease-in;
+    animation-fill-mode: forwards;
 }
 
 @keyframes highlight_b {
@@ -24,3 +27,8 @@
         transform: scaleX(100%);
     }
 }
+
+/* .inFocus::before{
+    animation: highlight_b 0.4s ease-in;
+    animation-fill-mode: forwards;
+} */

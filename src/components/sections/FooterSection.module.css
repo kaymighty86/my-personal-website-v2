@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 0;
 }
 
 .fullsreenSquarePattern{
@@ -12,7 +13,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    /* z-index: -1; */
+    z-index: -1;
     width: 100%;
     height: 100%;
     /* background-color: rgba(154, 50, 239, 0.3); */
@@ -29,5 +30,11 @@
     align-items: center;
     box-sizing: border-box;
     /* justify-content:center; */
-    /* z-index: 1; */
+    z-index: 1;
+}
+
+.contactFormCard{
+    width: 90%;
+    max-width: 35rem;
+    padding: 2rem;
 }
