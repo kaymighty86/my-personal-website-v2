@@ -1,0 +1,12 @@
+.splitSection{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splitSection>section{
+    flex: 1 1 0;
+}

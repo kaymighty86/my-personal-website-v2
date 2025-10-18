@@ -1,0 +1,32 @@
+.projectsSection{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.projectsSection>section{
+    padding: 1.4vw;
+    padding-top: 4rem;
+}
+
+.dataSection h1{
+    text-align: right;
+
+}
+
+.artSection{
+    text-align: center;
+}
+
+.artSection img{
+    display: inline-block;
+    position: sticky;
+    top: 5rem;
+
+    margin-top: 5rem;
+    width: 90%;
+    max-width: 30rem;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}

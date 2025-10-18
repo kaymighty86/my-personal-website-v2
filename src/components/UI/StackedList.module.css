@@ -1,0 +1,35 @@
+
+.infoList{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.infoList li{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.infoList li:first-child{
+    margin-top: 0px;
+}
+
+.infoList li:last-child{
+    margin-bottom: 0px;
+}
+
+.infoList li:hover{
+    color: var(--active-color)
+}
+
+.infoList span{
+    margin-right: 8px;
+    padding-top: 0.14rem;
+}
+
+.infoList p{
+    display: inline-block;
+    margin: 0px;
+}

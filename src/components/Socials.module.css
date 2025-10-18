@@ -1,0 +1,15 @@
+.socials{
+    list-style-type: none;
+    margin: 1rem 0px;
+    padding: 0px;
+}
+
+.socials li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0px 0.5rem;
+}
+
+.socials li:first-of-type{
+    margin-left: 0px;
+}

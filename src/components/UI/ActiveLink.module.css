@@ -1,0 +1,49 @@
+.activeLink{
+  display: inline-block;
+  position: relative;
+  color: var(--text-3);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.activeLink:hover{
+    color: var(--active-color);
+    transform: translate(0px,0.3rem);
+}
+
+/* a[target="blank"]:hover::after{
+    content: "\2197";
+    position: relative;
+    top: -10px;
+    font-size: large;
+} */
+
+.linkIcon{
+    top: 3px;
+}
+
+.text{
+    position: relative;
+}
+
+.underline:hover>.text::after{
+    content: "";
+    /* width: 50%; */
+    height: 3px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    background-color: var(--active-color);
+    animation: underlineAnim 0.3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underlineAnim{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}

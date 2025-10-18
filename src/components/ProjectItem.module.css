@@ -1,0 +1,59 @@
+.projectItem{
+    margin: 1rem 0px;
+    max-width: 30rem;
+    /* transition: all 0.2s ease-in-out; */
+}
+
+.projectItem:first-of-type{
+    margin-top: 2rem;
+}
+
+.projectItem:hover{
+    outline: 2px solid var(--primary-accent);
+}
+
+.projectHeaderRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectItem h3{
+    font-family: "Boldonse", system-ui;
+    font-size: small;
+}
+
+.projectItem p{
+    color: var(--text);
+}
+
+.skillsetList li{
+    font-size: small;
+}
+
+.actionsRow{
+    margin-top: 1rem;
+}
+
+.actionsRow>*{
+    margin: 0px 0.8rem;
+}
+
+.actionsRow>*:first-child{
+    margin-left: 0px;
+}
+
+.actionsRow>*>.linkIcon{
+    position: relative;
+    top: 3px;
+}
+
+.projectItem img{
+    display: block;
+    width: 100%;
+    height: 11rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: top;
+}

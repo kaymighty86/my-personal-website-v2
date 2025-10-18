@@ -6,8 +6,8 @@ export default function Card({type = "flat", className, children}){
     const classNames = `${styles.card} ${styles[type]} ${className != undefined? className : ""}`;
 
     return (
-        <div className={classNames}>
+        <section className={classNames}>
             {children}
-        </div>
+        </section>
     );
 }

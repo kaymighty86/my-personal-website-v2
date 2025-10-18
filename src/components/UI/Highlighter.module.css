@@ -1,0 +1,26 @@
+.highlighter{
+    position: relative;
+    z-index: 1;
+}
+
+.highlightSpan{
+    display: inline-block;
+    width: 0px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    /* transform: translateY(-50%); */
+    background-color: var(--active-color);
+    z-index: -1;
+    animation: highlight_b 0.4s;
+}
+
+@keyframes highlight_b {
+    0%{
+        transform: scaleX(0%);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}

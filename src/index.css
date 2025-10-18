@@ -2,12 +2,14 @@
   color-scheme: light dark;
 
   /*dark theme*/
-  --primary-accent: #755BE9;
+  --primary-accent: #8166fb;
+  --primary-accent-transparent: #a08ef25e;
   --active-color: aqua;
   --bg-color: #22222d;
-  --bg-highlight-color: #3e3e54;
+  --bg-highlight-color: #37374a;
   --text: #9fa5b2;
   --text-2: #e7ea37;
+  --text-3: rgb(210, 255, 255);
 
   /*light theme*/
   /*WORK IN PROGRESS*/
@@ -44,12 +46,12 @@ body {
 h1,h2{
   font-family: "Boldonse", system-ui;
   font-weight: 400;
-  color: var(--primary-accent);
   margin: 0px;
 }
 
 h1{
   font-size: x-large;
+  color: var(--primary-accent);
 }
 
 h2{
@@ -67,9 +69,21 @@ p{
 }
 
 a{
+  display: inline-block;
+  color: var(--text-3);
+  text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-a[target="blank"]{
+a:hover{
+    color: var(--active-color);
+    transform: translate(0px,0.3rem);
+}
 
+a[target="blank"].showIcon:hover::after{
+    content: "\2197";
+    position: relative;
+    top: -15px;
+    font-size: large;
 }

@@ -1,0 +1,23 @@
+.workHistoryItem{
+    margin: 1rem 0px;
+    max-width: 30rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.workHistoryItem:first-of-type{
+    margin-top: 2rem;
+}
+
+.workHistoryItem h3{
+    font-family: "Boldonse", system-ui;
+    font-size: small;
+    color: var(--text-3);
+}
+
+.skillsetList{
+    margin-top: 1rem;
+}
+
+.skillsetList li{
+    font-size: small;
+}
