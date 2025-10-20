@@ -21,6 +21,7 @@
 .label{
     display: inline-block;
     margin-top: 0.5rem;
+    transition: all 0.2s linear;
 }
 
 .labelInFocus{

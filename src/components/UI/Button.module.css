@@ -1,0 +1,38 @@
+.button{
+    position: relative;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--primary-accent);
+    color: var(--active-color);
+    font-size: medium;
+    padding: 0.5rem 1.5rem;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: var(--primary-accent);
+}
+
+.button:hover::before{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--active-color);
+    animation: button_hover 0.2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button_hover {
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0px;
+    }
+}

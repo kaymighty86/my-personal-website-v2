@@ -7,7 +7,6 @@ export default function Highlighter({children}){
 
     function handleMouseEnter(){
         setFocus(true);
-        console.log("triggered");
     }
 
     function handleMouseExit(){

@@ -8,10 +8,10 @@ export default function Socials(){
 
     return (
         <ul className={styles.socials}>
-            <li><ActiveLink href="#" target="blank" className="showIcon"><IoMail/></ActiveLink></li>
-            <li><ActiveLink href="#" target="blank" className="showIcon"><FaGithub /></ActiveLink></li>
-            <li><ActiveLink href="#" target="blank" className="showIcon"><FaLinkedin /></ActiveLink></li>
-            <li><ActiveLink href="#" target="blank" className="showIcon"><FaCodepen /></ActiveLink></li>
+            <li><ActiveLink href="#" target="blank" className="showDefaultIcon"><IoMail/></ActiveLink></li>
+            <li><ActiveLink href="#" target="blank" className="showDefaultIcon"><FaGithub /></ActiveLink></li>
+            <li><ActiveLink href="#" target="blank" className="showDefaultIcon"><FaLinkedin /></ActiveLink></li>
+            <li><ActiveLink href="#" target="blank" className="showDefaultIcon"><FaCodepen /></ActiveLink></li>
         </ul>
     );
 }

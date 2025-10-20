@@ -13,6 +13,14 @@
 
   /*light theme*/
   /*WORK IN PROGRESS*/
+  /* --primary-accent: #8166fb;
+  --primary-accent-transparent: #a08ef25e;
+  --active-color: rgb(4, 229, 229);
+  --bg-color: #e0e0ed;
+  --bg-highlight-color: #bccadc;
+  --text: #383a3f;
+  --text-2: #e7ea37;
+  --text-3: rgb(55, 70, 70); */
 
   /*setting default styles*/
   background-color: var(--bg-color);
@@ -81,7 +89,7 @@ a:hover{
     transform: translate(0px,0.3rem);
 }
 
-a[target="blank"].showIcon:hover::after{
+a[target="blank"].showDefaultIcon:hover::after{
     content: "\2197";
     position: relative;
     top: -15px;
