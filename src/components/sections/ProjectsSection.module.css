@@ -10,7 +10,11 @@
 
 .dataSection h1{
     text-align: right;
+    margin-bottom: 3rem;
+}
 
+.projectItem{
+    margin: 1.1rem 0px;
 }
 
 .artSection{

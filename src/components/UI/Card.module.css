@@ -4,10 +4,6 @@
     border-radius: 1.2rem;
 }
 
-.flat{
-    box-shadow: none;
-}
-
 .elevated{
-    box-shadow: 0px 0.6rem 1.4rem rgba(0,0,0,0.6);
+    box-shadow: 0px 0.6rem 1.4rem rgba(18, 18, 18, 0.6);
 }

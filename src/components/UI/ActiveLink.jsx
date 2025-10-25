@@ -1,4 +1,5 @@
 import styles from "./ActiveLink.module.css";
+import { Link } from "react-router";
 
 export default function ActiveLink({Icon, underline = false, className, children, ...others}){
     const classes = `${styles.activeLink}${className != undefined? " "+className : ""}${underline? " "+styles.underline : ""}`;

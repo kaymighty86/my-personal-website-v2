@@ -12,27 +12,29 @@ import StackedList from "../UI/StackedList";
 export default function LandingSection(){
 
     return (
-      <section className={styles.landingSection}>
-        <Suspense fallback={<img className={styles.landingSectionMedia} src={landingImageFallback} alt="techy image"/>}>
-            <video className={styles.landingSectionMedia} autoPlay muted loop>
-                <source src={landingVideo} type="video/mp4"/>
-            </video>
-        </Suspense>
-        <span className={styles.fullsreenSquarePattern} style={{backgroundImage: `url(${squarePattern})`}}></span>
-        <div className={styles.landingSectionUpperLayer}>
-            <div className={styles.dataSegment}>
-                <h1><Highlighter>Simeon</Highlighter> Adeoye</h1>
-                <h3>Front End Web Developer & UX/UI Designer</h3>
-                <Socials />
-                <Card>
-                    <StackedList list ={[
-                        "Do you need a new web application or product developed?",
-                        "Do you need help maintaining and enhancing your existing web solutions or products?",
-                        "Do you need a frontend developer to join your team on your exciting projects?",
-                    ]} />
-                </Card>
+    <>
+        <header className={styles.landingSection}>
+            <Suspense fallback={<img className={styles.landingSectionMedia} src={landingImageFallback} alt="techy image"/>}>
+                <video className={styles.landingSectionMedia} autoPlay muted loop>
+                    <source src={landingVideo} type="video/mp4"/>
+                </video>
+            </Suspense>
+            <span className={styles.fullsreenSquarePattern} style={{backgroundImage: `url(${squarePattern})`}}></span>
+            <div className={styles.landingSectionUpperLayer}>
+                <div className={styles.dataSegment}>
+                    <h1><Highlighter>Simeon</Highlighter> Adeoye</h1>
+                    <h3>Front End Web Developer & UI/UX Designer</h3>
+                    <Socials />
+                    <Card>
+                        <StackedList list ={[
+                            "Do you need a new web application or product developed?",
+                            "Do you need help maintaining and enhancing your existing web solutions or products?",
+                            "Do you need a frontend developer to join your team on your exciting projects?",
+                        ]} />
+                    </Card>
+                </div>
             </div>
-        </div>
-      </section>
+        </header>
+    </>
     );
 }

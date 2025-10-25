@@ -1,0 +1,16 @@
+.projectsPage{
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.projectsListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem auto;
+    max-width: 92rem;
+}
+
+.projectItem{
+    margin: 1.1rem
+}

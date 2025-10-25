@@ -1,18 +1,34 @@
 import './App.css'
+import { createBrowserRouter, RouterProvider } from 'react-router';
+import RootPage from './components/pages/RootPage';
+import Home from './components/pages/Home';
+import ProjectsPage from './components/pages/ProjectsPage';
+import { projectsPageLoader } from './components/pages/ProjectsPageLoader';
 
-import LandingSection from './components/sections/LandingSection';
-import AboutSection from './components/sections/AboutSection';
-import ProjectsSection from './components/sections/ProjectsSection';
-import FooterSection from './components/sections/FooterSection';
+const browserRouter = createBrowserRouter([
+  {
+    id:"root",
+    path: "/",
+    element: <RootPage />,
+    loader: projectsPageLoader,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "projects",
+        element: <ProjectsPage />
+      }
+    ]
+  }
+]);
 
 function App() {
 
   return (
     <>
-      <LandingSection />
-      <AboutSection />
-      <ProjectsSection />
-      <FooterSection />
+      <RouterProvider router={browserRouter}/>
     </>
   )
 }

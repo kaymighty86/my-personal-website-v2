@@ -5,11 +5,19 @@ import SplitSection from "../UI/SplitSection";
 import Section from "../UI/Section";
 import Highlighter from "../UI/Highlighter";
 import ProjectItem from "../ProjectItem";
+import ActiveLink_Router from "../UI/ActiveLink_Router";
+import { FaArrowRight } from "react-icons/fa";
+
+import { useRouteLoaderData, Await } from "react-router";
+import { Suspense } from "react";
 
 //REMOVE CODE BEFORE DEPLOY
-import tempImage from "../../assets/pictures/temp_projs/tic-tac-toe-screenshot.png";
+// import tempImage from "../../assets/pictures/temp_projs/tic-tac-toe-screenshot.png";
 
 export default function ProjectsSection(){
+
+    const loaderData = useRouteLoaderData("root");
+
     return (
         <SplitSection className={styles.projectsSection}>
             <section className={styles.artSection}>
@@ -17,29 +25,26 @@ export default function ProjectsSection(){
             </section>
             <Section type="focus" className={styles.dataSection}>
                 <h1>His <Highlighter>Works</Highlighter></h1>
-                <ProjectItem 
-                projectTitle="Tic Tac Toe Game"
-                projectDescription="Play the classic turn-based game with a partner and enjoy!"
-                thumbnail={tempImage}
-                skillsetList={[
-                    "React",
-                    "Javascript",
-                    "css",
-                    "Figma",
-                    "Photoshop"
-                ]} />
-                
-                <ProjectItem 
-                projectTitle="Tic Tac Toe Game"
-                projectDescription="Play the classic turn-based game with a partner and enjoy!"
-                thumbnail={tempImage}
-                skillsetList={[
-                    "React",
-                    "Javascript",
-                    "css",
-                    "Figma",
-                    "Photoshop"
-                ]} />
+                <Suspense fallback={
+                    <p>Loading projects list. Please wait...</p>
+                }>
+                    <Await resolve={loaderData.projectsResponse}>
+                        {(projects)=>(
+                            projects.filter((project, id)=>(id <= 2)).map(project => (
+                                <ProjectItem 
+                                    className={styles.projectItem}
+                                    key={project.name}
+                                    projectTitle={project.name}
+                                    projectDescription={project.description}
+                                    thumbnail={project.thumbnail}
+                                    websiteURL={project.websiteURL}
+                                    codeURL={project.codeURL}
+                                    skillsetList={project.skillsetList} />
+                            ))
+                        )}
+                    </Await>
+                </Suspense>
+                <ActiveLink_Router to="projects" Icon={FaArrowRight} underline>View all projects</ActiveLink_Router>
             </Section>
         </SplitSection>
     );

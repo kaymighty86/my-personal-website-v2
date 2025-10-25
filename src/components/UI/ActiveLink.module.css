@@ -19,7 +19,8 @@
 } */
 
 .linkIcon{
-    top: 3px;
+  position: relative;
+  top: 2px;
 }
 
 .text{

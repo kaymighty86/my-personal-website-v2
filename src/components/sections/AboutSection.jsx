@@ -8,7 +8,7 @@ import toonDeskImage from "../../assets/pictures/toon desk with keyboard.jpg"
 
 export default function AboutSection(){
     return (
-        <SplitSection className={styles.aboutSection}>
+        <SplitSection id="about" className={styles.aboutSection}>
             <Section className={styles.dataSection}>
                 <h1>Something <Highlighter>About Him</Highlighter></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis odio id risus placerat congue. Proin nisl ante, gravida at nibh ut, 

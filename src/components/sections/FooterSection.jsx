@@ -8,14 +8,14 @@ import Highlighter from "../UI/Highlighter";
 
 export default function FooterSection(){
     return(
-        <section className={styles.footerSection} style={{backgroundImage: `url(${footerBackground})`}}>
+        <footer id="contact" className={styles.footerSection} style={{backgroundImage: `url(${footerBackground})`}}>
             <span className={styles.fullsreenSquarePattern} style={{backgroundImage: `url(${tinySquaresPattern})`}}></span>
-            <div className={styles.landingSectionUpperLayer}>
+            <div className={styles.SectionUpperLayer}>
                 <Card type="elevated" className={styles.contactFormCard}>
                     <h1>Reach <Highlighter>Out</Highlighter></h1>
                     <ContactForm />
                 </Card>
             </div>
-        </section>
+        </footer>
     );
 }
