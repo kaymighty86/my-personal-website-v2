@@ -4,6 +4,7 @@
 
   /*dark theme*/
   --primary-accent: #8166fb;
+  --primary-accent-light: #a28ff8;
   --primary-accent-transparent: #a08ef25e;
   --active-color: aqua;
   --bg-color: #22222d;
@@ -97,6 +98,6 @@ a:hover{
 a[target="blank"].showDefaultIcon:hover::after{
     content: "\2197";
     position: relative;
-    top: -15px;
-    font-size: large;
+    top: -9px;
+    font-size: medium;
 }

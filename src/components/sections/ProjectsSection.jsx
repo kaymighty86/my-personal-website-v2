@@ -1,4 +1,4 @@
-import sectionImage from "../../assets/pictures/toon computer transparent bg.png";
+import sectionImage from "../../assets/pictures/team work 3d.jpg";
 import styles from "./ProjectsSection.module.css";
 
 import SplitSection from "../UI/SplitSection";

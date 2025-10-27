@@ -1,6 +1,6 @@
 .projectItem{
-    max-width: 23rem;
-    /* transition: all 0.2s ease-in-out; */
+    padding: 1.4rem 1.1rem;
+    box-sizing: border-box;
 }
 
 .projectItem:hover{

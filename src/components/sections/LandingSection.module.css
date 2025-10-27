@@ -55,3 +55,8 @@
 .dataSegment h1{
     font-size: 3rem;
 }
+
+.valuesList{
+    padding: 1.4rem 1.1rem;
+    box-sizing: border-box;
+}

@@ -22,7 +22,7 @@ export default function Input({label, name, className, onFocus, onBlur, ...other
     return (
         <span className={styles.inputContainer}>
             {label && <label htmlFor={name} className={`${styles.label}${inFocus?" "+styles.labelInFocus:""}`}>{label}</label>}
-            <input className={inputClasses} onFocus={handleFocusSwitch} onBlur={handleFocusSwitch} {...others}/>
+            <input className={inputClasses} name={name} onFocus={handleFocusSwitch} onBlur={handleFocusSwitch} {...others}/>
         </span>
     );
 }

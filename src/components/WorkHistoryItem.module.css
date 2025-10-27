@@ -1,6 +1,8 @@
 .workHistoryItem{
     margin: 1rem 0px;
     max-width: 30rem;
+    padding: 1.4rem 1.1rem;
+    box-sizing: border-box;
     transition: all 0.2s ease-in-out;
 }
 
@@ -11,7 +13,7 @@
 .workHistoryItem h3{
     font-family: "Boldonse", system-ui;
     font-size: small;
-    color: var(--text-3);
+    color: var(--primary-accent-light);
 }
 
 .skillsetList{

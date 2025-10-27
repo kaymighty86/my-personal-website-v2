@@ -22,7 +22,7 @@ export default function TextArea({label, name, className, onFocus, onBlur, ...ot
     return (
         <span className={styles.inputContainer}>
             {label && <label htmlFor={name} className={`${styles.label}${inFocus?" "+styles.labelInFocus:""}`}>{label}</label>}
-            <textarea className={textareaClasses} onFocus={handleFocusSwitch} onBlur={handleFocusSwitch} {...others}></textarea>
+            <textarea className={textareaClasses} name={name} onFocus={handleFocusSwitch} onBlur={handleFocusSwitch} {...others}></textarea>
         </span>
     );
 }

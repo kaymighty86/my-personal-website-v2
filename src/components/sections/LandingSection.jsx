@@ -13,7 +13,7 @@ export default function LandingSection(){
 
     return (
     <>
-        <header className={styles.landingSection}>
+        <header id="landing" className={styles.landingSection}>
             <Suspense fallback={<img className={styles.landingSectionMedia} src={landingImageFallback} alt="techy image"/>}>
                 <video className={styles.landingSectionMedia} autoPlay muted loop>
                     <source src={landingVideo} type="video/mp4"/>
@@ -25,11 +25,11 @@ export default function LandingSection(){
                     <h1><Highlighter>Simeon</Highlighter> Adeoye</h1>
                     <h3>Front End Web Developer & UI/UX Designer</h3>
                     <Socials />
-                    <Card>
+                    <Card className={styles.valuesList}>
                         <StackedList list ={[
-                            "Do you need a new web application or product developed?",
-                            "Do you need help maintaining and enhancing your existing web solutions or products?",
-                            "Do you need a frontend developer to join your team on your exciting projects?",
+                            "Expert multidisciplined Frontend Engineer who enjoys developing fully functional web applications / web solutions / websites",
+                            "Excels at maintaining and enhancing existing web solutions or products",
+                            "Frontend developer who enjoys working on exciting team projects",
                         ]} />
                     </Card>
                 </div>

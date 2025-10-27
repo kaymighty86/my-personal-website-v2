@@ -15,6 +15,7 @@
 
 .projectItem{
     margin: 1.1rem 0px;
+    /* width: 100%; */
 }
 
 .artSection{
@@ -24,12 +25,11 @@
 .artSection img{
     display: inline-block;
     position: sticky;
-    top: 5rem;
-
-    margin-top: 5rem;
+    top: 3rem;
+    margin: 2rem 0px;
     width: 90%;
     max-width: 30rem;
-    height: auto;
+    height: 40rem;
     object-fit: cover;
     object-position: center;
     border-radius: 2rem;

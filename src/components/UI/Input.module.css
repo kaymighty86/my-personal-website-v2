@@ -27,3 +27,8 @@
 .labelInFocus{
     color: var(--active-color);
 }
+
+.input:disabled{
+    background-color: rgb(207, 211, 216);
+    cursor: not-allowed;
+}
