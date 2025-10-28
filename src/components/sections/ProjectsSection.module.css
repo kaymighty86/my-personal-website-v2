@@ -3,9 +3,8 @@
     margin-bottom: 5rem;
 }
 
-.projectsSection>section{
-    padding: 1.4vw;
-    padding-top: 4rem;
+.dataSection,.artSection{
+    padding-top: 3rem;
 }
 
 .dataSection h1{
@@ -18,19 +17,43 @@
     /* width: 100%; */
 }
 
-.artSection{
-    text-align: center;
+
+.artSection div{
+    height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: sticky;
+    top: 0px;
+    /* text-align: center; */
 }
 
 .artSection img{
     display: inline-block;
-    position: sticky;
-    top: 3rem;
-    margin: 2rem 0px;
-    width: 90%;
-    max-width: 30rem;
-    height: 40rem;
+    width: 86%;
+    height: 86%;
     object-fit: cover;
     object-position: center;
     border-radius: 2rem;
+}
+
+.viewMoreLink{
+    margin-top: 1rem;
+}
+
+@media (max-width: 60rem) {
+    .artSection div{
+        align-items: center;
+        position: static;
+        height: 30rem;
+        min-height: 30rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .artSection img{
+        width: 100%;
+        height: 100%;
+    }
 }

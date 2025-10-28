@@ -1,22 +1,52 @@
-.aboutSection>section{
-    padding: 1.4vw;
-    padding-top: 4rem;
+.dataSection,.artSection{
+    padding-top: 3rem;
 }
 
-.artSection{
-    text-align: center;
+.artSection div{
+    height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: sticky;
+    top: 0px;
+    /* text-align: center; */
 }
 
 .artSection img{
     display: inline-block;
-    position: sticky;
-    top: 3rem;
-
-    margin: 2rem 0px;
-    width: 90%;
-    max-width: 30rem;
-    height: 40rem;
+    width: 86%;
+    height: 86%;
     object-fit: cover;
     object-position: center;
     border-radius: 2rem;
+}
+
+.biography p{
+    margin: 1.5rem 0px;
+}
+
+.viewMoreLink{
+    margin-top: 1rem;
+}
+
+@media (max-width: 60rem) {
+    .dataSection{
+        padding-top: 3rem;
+    }
+
+    .artSection{
+        padding: 0px;
+    }
+
+    .artSection div{
+        display: none;
+        align-items: center;
+    }
+
+    .artSection img{
+        width: 90%;
+        height: 95%;
+    }
 }

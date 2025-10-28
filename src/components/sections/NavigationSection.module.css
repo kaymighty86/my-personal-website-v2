@@ -103,3 +103,14 @@
         transform: translateX(0px);
     }
 }
+
+
+@media (max-width: 60rem) {
+    .navigationSection ul{
+        padding-left: 2rem;
+    }
+
+    .navigationSection li{
+        font-size: 3rem;
+    }
+}

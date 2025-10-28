@@ -1,5 +1,5 @@
 import styles from "./projectItem.module.css";
-import Card from "./UI/card";
+import Card from "./UI/Card";
 import UnstackedList from "./UI/UnstackedList";
 import ActiveLink from "./UI/ActiveLink";
 

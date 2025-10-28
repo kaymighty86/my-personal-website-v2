@@ -1,0 +1,38 @@
+{
+    "workHistory": [
+        {
+            "dateRange": "2019 - Present",
+            "jobRole": "Senior Product Engineer",
+            "companyName": "eTranzact",
+            "companyURL": "https://www.etranzact.com/",
+            "workDescription": "Developed innovative and reliable financial technology products built for accessibility, performance and usability for organisations in the public and private sectors ranging from Government Agencies to financial institutions and e-Commerce Businesses driving consistent year-over-year growth in the organization's profit margin — including a 65% increase in the 2024 financial year.",
+            "skillsetList": [
+                    "React.JS",
+                    "Redux",
+                    "React Router",
+                    "Javascript",
+                    "HTML",
+                    "CSS",
+                    "Figma",
+                    "Adobe Illustrator",
+                    "GitHub"
+                ]
+        },
+        {
+            "dateRange": "2017 - 2018",
+            "jobRole": "Front End Developer",
+            "companyName": "Orion Centuro Limited",
+            "companyURL": "",
+            "workDescription": "Worked with a team of Software engineers to develop bespoke products for companies and businesses. Handled development of UI components in addition to maintaining and enhancing existing frontend applications of clients' products tailored towards enhancing user experience and boosting revenue.",
+            "skillsetList": [
+                    "React.JS",
+                    "Redux",
+                    "React Router",
+                    "Javascript",
+                    "HTML",
+                    "CSS",
+                    "GitHub"
+                ]
+        }
+    ]
+}

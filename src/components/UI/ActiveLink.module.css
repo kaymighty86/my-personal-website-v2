@@ -21,6 +21,7 @@
 .linkIcon{
   position: relative;
   top: 2px;
+  line-height: 0px;
 }
 
 .text{

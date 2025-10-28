@@ -21,10 +21,12 @@ export default function ProjectsSection(){
     return (
         <SplitSection className={styles.projectsSection}>
             <section className={styles.artSection}>
-                <img src={sectionImage} alt="3D Image of a computer" />
+                <div>
+                    <img src={sectionImage} alt="3D Image of a team discussing" />
+                </div>
             </section>
             <Section type="focus" className={styles.dataSection}>
-                <h1>His <Highlighter>Works</Highlighter></h1>
+                <h1>His <Highlighter>Projects</Highlighter></h1>
                 <Suspense fallback={
                     <p>Loading projects list. Please wait...</p>
                 }>
@@ -44,7 +46,7 @@ export default function ProjectsSection(){
                         )}
                     </Await>
                 </Suspense>
-                <ActiveLink_Router to="projects" Icon={FaArrowRight} underline>View all projects</ActiveLink_Router>
+                <ActiveLink_Router to="projects" className={styles.viewMoreLink} Icon={FaArrowRight} underline>View all projects</ActiveLink_Router>
             </Section>
         </SplitSection>
     );

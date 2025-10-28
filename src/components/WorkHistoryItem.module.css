@@ -10,16 +10,27 @@
     margin-top: 2rem;
 }
 
-.workHistoryItem h3{
-    font-family: "Boldonse", system-ui;
+.workHistoryItem h2{
     font-size: small;
     color: var(--primary-accent-light);
 }
 
-.skillsetList{
-    margin-top: 1rem;
+.companyName{
+    font-family: "Boldonse", system-ui;
+    font-size: small;
+    color: var(--text-3);
+    margin: 0px;
 }
 
-.skillsetList li{
+.workDescription{
+    font-size: 0.9rem;
+}
+
+.skillsetList{
+    margin-top: 1rem;
     font-size: small;
 }
+
+/* .skillsetList li{
+    font-size: small;
+} */

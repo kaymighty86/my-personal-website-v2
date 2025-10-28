@@ -14,8 +14,10 @@ export default function ProjectsPage(){
     return (
         <Page>
             <section className={Styles.projectsPage}>
-                <h1><Highlighter>Simeon</Highlighter> Adeoye</h1>
-                <h2>Projects</h2>
+                <div className={Styles.header}>
+                    <h1><Highlighter>Simeon</Highlighter> Adeoye</h1>
+                    <h2>Projects</h2>
+                </div>
                 <section className={Styles.projectsListContainer}>
                     <Suspense fallback={
                         <p>Loading projects list. Please wait...</p>

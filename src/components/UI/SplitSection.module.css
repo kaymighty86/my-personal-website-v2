@@ -8,5 +8,13 @@
 }
 
 .splitSection>section{
-    flex: 1 1 0;
+    flex: 1 1 0;/*all items should have equal width*/
+}
+
+@media (max-width: 60rem) {
+    .splitSection{
+        display: block;
+        flex: none;
+        width: 86%;
+    }
 }
