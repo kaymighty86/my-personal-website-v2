@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 100dvh;
+    height: 100svh;
     margin: 0px;
 }
 
@@ -59,4 +59,15 @@
 .valuesList{
     padding: 1.4rem 1.1rem;
     box-sizing: border-box;
+}
+
+
+@media (max-width: 60rem) {
+    .landingSectionUpperLayer{
+        justify-content: center;
+    }
+
+    .valuesList{
+        display: none;
+    }
 }

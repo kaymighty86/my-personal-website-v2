@@ -13,7 +13,7 @@ export default function LandingSection(){
     return (
     <>
         <header id="landing" className={styles.landingSection}>
-            <video className={styles.landingSectionMedia} poster={landingImageFallback} autoPlay muted loop disablePictureInPicture disableRemotePlayback>
+            <video className={styles.landingSectionMedia} poster={landingImageFallback} autoPlay muted loop playsInline preload="auto" disablePictureInPicture disableRemotePlayback >
                 <source src={landingVideo} type="video/mp4"/>
             </video>
             <span className={styles.fullsreenSquarePattern} style={{backgroundImage: `url(${squarePattern})`}}></span>

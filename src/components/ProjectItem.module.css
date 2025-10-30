@@ -32,14 +32,17 @@
 
 .actionsRow{
     margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .actionsRow>*{
-    margin: 0px 0.8rem;
+    /* margin: 0px 0.8rem; */
 }
 
 .actionsRow>*:first-child{
-    margin-left: 0px;
+    /* margin-left: 0px; */
 }
 
 .actionsRow>*>.linkIcon{

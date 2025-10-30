@@ -2,7 +2,7 @@
     z-index: 1;
 }
 
-.customSection.focus::before{
+/* .customSection.focus::before{
     content: "";
     position: fixed;
     top:0px;
@@ -24,4 +24,10 @@
         backdrop-filter: blur(4px);
         background-color: rgba(0, 0, 0, 0.3);
     }
-}
+} */
+
+/* @media (max-width: 60rem) {
+    .valuesList{
+        display: none;
+    }
+} */
