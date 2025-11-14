@@ -3,10 +3,10 @@
   color-scheme: light dark;
 
   /*dark theme*/
-  --primary-accent: #8166fb;
+  --primary-accent: #6e4ff9;
   --primary-accent-light: #a28ff8;
   --primary-accent-transparent: #a08ef25e;
-  --active-color: aqua;
+  --active-color: rgb(111, 253, 253);
   --bg-color: #22222d;
   --bg-highlight-color: #37374a;
   --text: #9fa5b2;

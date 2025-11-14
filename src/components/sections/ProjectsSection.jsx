@@ -7,6 +7,7 @@ import Highlighter from "../UI/Highlighter";
 import ProjectItem from "../ProjectItem";
 import ActiveLink_Router from "../UI/ActiveLink_Router";
 import { FaArrowRight } from "react-icons/fa";
+import Button from "../UI/Button";
 
 import { useRouteLoaderData, Await } from "react-router";
 import { Suspense } from "react";
@@ -27,26 +28,30 @@ export default function ProjectsSection(){
             </section>
             <Section type="focus" className={styles.dataSection}>
                 <h1>His <Highlighter>Projects</Highlighter></h1>
-                <Suspense fallback={
-                    <p>Loading projects list. Please wait...</p>
-                }>
-                    <Await resolve={loaderData.projectsResponse}>
-                        {(projects)=>(
-                            projects.filter((project, id)=>(id <= 2)).map(project => (
-                                <ProjectItem 
-                                    className={styles.projectItem}
-                                    key={project.name}
-                                    projectTitle={project.name}
-                                    projectDescription={project.description}
-                                    thumbnail={project.thumbnail}
-                                    websiteURL={project.websiteURL}
-                                    codeURL={project.codeURL}
-                                    skillsetList={project.skillsetList} />
-                            ))
-                        )}
-                    </Await>
-                </Suspense>
-                <ActiveLink_Router to="projects" className={styles.viewMoreLink} Icon={FaArrowRight} underline>View all projects</ActiveLink_Router>
+                <div className={styles.projectsList}>
+                    <Suspense fallback={
+                            <p>Loading projects list. Please wait...</p>
+                    }>
+                        <Await resolve={loaderData.projectsResponse}>
+                            {(projects)=>(
+                                projects.filter((project, id)=>(id <= 3)).map(project => (
+                                    <ProjectItem 
+                                        className={styles.projectItem}
+                                        key={project.name}
+                                        projectTitle={project.name}
+                                        projectDescription={project.description}
+                                        thumbnail={project.thumbnail}
+                                        websiteURL={project.websiteURL}
+                                        codeURL={project.codeURL}
+                                        skillsetList={project.skillsetList} />
+                                ))
+                            )}
+                        </Await>
+                    </Suspense>
+                </div>
+                
+                {/* <ActiveLink_Router to="projects" className={styles.viewMoreLink} Icon={FaArrowRight} underline>View all projects</ActiveLink_Router> */}
+                <ActiveLink_Router to="projects" className={styles.viewMoreLink}><Button>View all projects <FaArrowRight /></Button></ActiveLink_Router>
             </Section>
         </SplitSection>
     );
