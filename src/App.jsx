@@ -3,6 +3,7 @@ import RootPage from './components/pages/RootPage';
 import Home from './components/pages/Home';
 import ProjectsPage from './components/pages/ProjectsPage';
 import { projectsPageLoader } from './components/pages/ProjectsPageLoader';
+import ErrorPage from './components/pages/ErrorPage';
 
 const browserRouter = createBrowserRouter([
   {
@@ -10,10 +11,12 @@ const browserRouter = createBrowserRouter([
     path: "/",
     element: <RootPage />,
     loader: projectsPageLoader,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Home />
+        
       },
       {
         path: "projects",
